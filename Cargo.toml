@@ -1,0 +1,17 @@
+[package]
+name = "pragma"
+version = "0.1.0"
+edition = "2018"
+license = "Apache-2.0"
+description = "An experimental inline DSL for conditional compilation"
+homepage = "https://docs.rs/pragma"
+repository = "https://github.com/ohsayan/pragma"
+readme = "README.md"
+
+[dependencies]
+syn = { version = "1", features = ["full"] }
+quote = "1"
+proc-macro2 = "1"
+
+[lib]
+proc-macro = true
